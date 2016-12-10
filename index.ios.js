@@ -11,7 +11,7 @@ import {
 import {
     DropMessage,
     MessageDetails,
-    MessageList,
+    MessageHistory,
     Settings,
     Welcome
 } from "./scenes/ios"
@@ -31,8 +31,8 @@ export default class Kruzit extends React.Component {
         switch (route.id) {
             case "drop":
                 return (<DropMessage />)
-            case "list":
-                return (<MessageList />)
+            case "history":
+                return (<MessageHistory />)
             case "message":
                 return (<MessageDetails />)
             case "settings":
@@ -70,9 +70,9 @@ export default class Kruzit extends React.Component {
                         return (
                             <Text 
                                 onPress={() => {
-                                    navigator.replace({ id:"list" })
+                                    navigator.replace({ id:"history" })
                                 }}>
-                                List
+                                History
                             </Text>
                         )
                     }

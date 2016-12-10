@@ -6,11 +6,11 @@ import {
     View
 } from "react-native"
 
-export default class MessageList extends React.Component {
+export default class MessageHistory extends React.Component {
     render() {
         return (
             <View>
-                <Text>List Message</Text>
+                <Text>Message History</Text>
             </View>
         )
     }
